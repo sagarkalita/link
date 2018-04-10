@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/ -->
+<html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>CWAP – 802.11 Medium Contention | mrn-cciew</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://mrncciew.com/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://s2.wp.com/wp-content/themes/pub/chateau/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta name="google-site-verification" content="3B4xOJUKtsmRVKulsV0RkdRoxhZ8ekZmtI7__PnWGRw">
+		<script id="twitter-wjs" src="./values_files/widgets.js.download"></script><script src="./values_files/remote-login.php" type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<link rel="dns-prefetch" href="https://s2.wp.com/">
+<link rel="dns-prefetch" href="https://s1.wp.com/">
+<link rel="dns-prefetch" href="https://mrncciew.wordpress.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="alternate" type="application/rss+xml" title="mrn-cciew » Feed" href="https://mrncciew.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="mrn-cciew » Comments Feed" href="https://mrncciew.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="mrn-cciew » CWAP – 802.11 Medium Contention Comments Feed" href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/feed/">
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s1.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1516999477h&ver=4.9.5"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./values_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="all-css-0-1" href="./values_files/saved_resource" type="text/css" media="all">
+<link rel="stylesheet" id="print-css-1-1" href="./values_files/global-print.css" type="text/css" media="print">
+<link rel="stylesheet" id="all-css-2-1" href="./values_files/saved_resource(1)" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./values_files/saved_resource(2)"></script>
+<link rel="stylesheet" id="all-css-0-2" href="./values_files/style.css" type="text/css" media="all">
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mrncciew.wordpress.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="802.11 Mgmt : Deauth &amp; Disassociation Frames" href="https://mrncciew.com/2014/10/11/802-11-mgmt-deauth-disassociation-frames/">
+<link rel="next" title="CWAP – 802.11 Data Frame Types" href="https://mrncciew.com/2014/10/13/cwap-802-11-data-frame-types/">
+<meta name="generator" content="WordPress.com">
+<link rel="canonical" href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/">
+<link rel="shortlink" href="https://wp.me/p2lXei-1mC">
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fmrncciew.com%2F2014%2F10%2F12%2Fcwap-802-11-medium-contention%2F&amp;for=wpcom-auto-discovery"><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fmrncciew.com%2F2014%2F10%2F12%2Fcwap-802-11-medium-contention%2F&amp;for=wpcom-auto-discovery">
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="CWAP – 802.11 Medium Contention">
+<meta property="og:url" content="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/">
+<meta property="og:description" content="DCF- Distributed Coordination Function : Non-QoS WLAN HCF with EDCA – Hybrid Coordination Function : QoS WLAN EDCA- Enhanced Distributed Channel Access PCF – Point Coordination Function…">
+<meta property="article:published_time" content="2014-10-12T09:42:38+00:00">
+<meta property="article:modified_time" content="2014-11-06T23:31:16+00:00">
+<meta property="og:site_name" content="mrn-cciew">
+<meta property="og:image" content="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-05.png">
+<meta property="og:image:width" content="459">
+<meta property="og:image:height" content="296">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@wordpressdotcom">
+<meta name="twitter:text:title" content="CWAP – 802.11 Medium Contention">
+<meta name="twitter:image" content="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-01.png?w=240">
+<meta name="twitter:card" content="summary">
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom">
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/e6d51ea1ecc46222e010a7f69018e817?s=32" sizes="16x16">
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/e6d51ea1ecc46222e010a7f69018e817?s=32" sizes="16x16">
+<link rel="apple-touch-icon-precomposed" href="https://secure.gravatar.com/blavatar/e6d51ea1ecc46222e010a7f69018e817?s=114">
+<link rel="openid.server" href="https://mrncciew.wordpress.com/?openidserver=1">
+<link rel="openid.delegate" href="https://mrncciew.wordpress.com/">
+<link rel="search" type="application/opensearchdescription+xml" href="https://mrncciew.com/osd.xml" title="mrn-cciew">
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com">
+	<style>
+		#page {
+			border-color: #ffffff;
+		}
+		#main-title #site-title a:hover,
+		.post-title h1,
+		.post-title h1 a,
+		.post-extras .post-edit-link,
+		.post-entry a,
+		.post-entry .more-link:hover,
+		#author-description a,
+		.more-posts .page-title em,
+		#more-posts-inner a:hover,
+		#comments li a:hover,
+		.comment-text p a,
+		.comment-text .reply-link a:hover,
+		#comments li.byuser .comment-author,
+		#comments #respond h3,
+		.sidebar-widget a:active,
+		#calendar_wrap table td a,
+		#nav-below a:active,
+		#error404 a:hover,
+		#menu .current-menu-item > a,
+		#menu .current_page_item > a,
+		#comment-nav-above a,
+		#comment-nav-below a,
+		.comment-text table a {
+			color: #ffffff;
+		}
+	</style>
+<meta name="application-name" content="mrn-cciew"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content="My CCIE Wireless Journey &amp; More....."><meta name="msapplication-task" content="name=Subscribe;action-uri=https://mrncciew.com/feed/;icon-uri=https://secure.gravatar.com/blavatar/e6d51ea1ecc46222e010a7f69018e817?s=16"><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s1.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico"><meta name="title" content="CWAP – 802.11 Medium Contention | mrn-cciew on WordPress.com">
+<meta name="description" content="DCF- Distributed Coordination Function : Non-QoS WLAN HCF with EDCA - Hybrid Coordination Function : QoS WLAN EDCA- Enhanced Distributed Channel Access PCF - Point Coordination Function (not implemented practically) Physical Carrier Sense: Layer 1 - Clear Channel Assessment (CCA) - ED (Energy Detection) - CS (Carrier Sense or Preamble detection) Virtual Carrier Sense  :…">
+<link rel="amphtml" href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/amp/"><style type="text/css" id="syntaxhighlighteranchor"></style>
+<style type="text/css"></style><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="./values_files/hovercard.css"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="./values_files/services.css"><script type="text/javascript" charset="utf-8" async="" src="./values_files/timeline.f3704eb7aa37eaac805e4960db90c894.js.download"></script><script src="https://secure.gravatar.com/e6bfc472b18c36eb851ccc502bfb036d.json?callback=Gravatar.fetch_profile_callback" type="text/javascript"></script><script src="https://secure.gravatar.com/f6346ac53ea9e44bb0702598afb85635.json?callback=Gravatar.fetch_profile_callback" type="text/javascript"></script></head>
+
+<body class="post-template-default single single-post postid-5246 single-format-standard mp6 customizer-styles-applied two-column content-sidebar highlander-enabled highlander-dark">
+<div id="page" class="hfeed">
+		<div id="page-inner">
+		<header id="branding" role="banner">
+			<nav id="menu" role="navigation">
+				<ul id="menu-cciew-v2-0-cisco-doc" class="menu clear-fix"><li id="menu-item-158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-158"><a href="https://supportforums.cisco.com/community/netpro/wireless-mobility">Cisco Forum</a></li>
+<li id="menu-item-99" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-99"><a href="https://wifitraining.com/">WiFiTraining</a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-147"><a href="https://mrncciew.com/2014/10/23/free-cciew-study-material/">CCIEW Notes</a></li>
+<li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150"><a href="https://mrncciew.com/2014/10/04/my-cwap-study-notes/">CWAP Notes</a></li>
+<li id="menu-item-100" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-100"><a href="https://mrncciew.com/2014/09/13/how-to-study-for-cwsp/">CWSP Notes</a></li>
+</ul>			</nav><!-- end #menu -->
+
+			<div id="main-title">
+				<hgroup>
+					<h1 id="site-title"><a href="https://mrncciew.com/" title="mrn-cciew" rel="home">mrn-cciew</a></h1>
+												<h2 id="site-description">~ My CCIE Wireless Journey &amp; More…..</h2>
+									</hgroup>
+			</div><!-- end #main-title -->
+
+							<div id="search">
+					
+<form method="get" action="https://mrncciew.com//">
+	<div>
+		<label for="s" class="assistive-text">Search:</label>
+		<input type="text" value="Search…" name="s" id="s" onfocus="this.value=&#39;&#39;">
+		<input type="submit" name="search" value="Go">
+	</div>
+</form>
+				</div><!-- end #search -->
+			
+			<div id="main-image">
+							<a href="https://mrncciew.com/">
+													<img src="./values_files/cropped-dsc014823.jpg" width="960" height="260" alt="mrn-cciew" title="mrn-cciew">
+									</a>
+						</div><!-- end #main-image -->
+		</header><!-- #branding -->
+		<div id="main" class="clear-fix">
+
+	<div id="primary">
+		<div id="content" class="clear-fix">
+
+		
+			<article id="post-5246" class="post-5246 post type-post status-publish format-standard hentry category-cwap category-wireless-qos tag-cwap tag-difs tag-edca tag-eifs tag-interframe-spaces tag-rifs tag-sifs">
+	<header class="post-title">
+				<h1>CWAP – 802.11 Medium&nbsp;Contention</h1>			<a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/" class="post-permalink">		<p class="post-date">
+			<strong>12</strong>
+			<em>Sunday</em>
+			<span>Oct 2014</span>
+		</p>
+	</a>
+	<div class="post-info clear-fix">
+		<p>
+			Posted <span class="by-author"> by <span class="author vcard"><a class="url fn n" href="https://mrncciew.com/author/nayarasi/" title="View all posts by nayarasi" rel="author">nayarasi</a></span></span> in <a href="https://mrncciew.com/category/cwap/" rel="category tag">CWAP</a>, <a href="https://mrncciew.com/category/wireless-qos/" rel="category tag">Wireless QoS</a>		</p>
+		<p class="post-com-count">
+			<strong>≈ <a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#comments">10 Comments</a></strong>
+		</p>
+	</div><!-- end .post-info -->
+	</header><!-- end .post-title -->
+
+	<div class="post-content clear-fix">
+			<div class="post-extras">
+				<p><strong>Tags</strong></p><p><a href="https://mrncciew.com/tag/cwap/" rel="tag">CWAP</a>, <a href="https://mrncciew.com/tag/difs/" rel="tag">DIFS</a>, <a href="https://mrncciew.com/tag/edca/" rel="tag">EDCA</a>, <a href="https://mrncciew.com/tag/eifs/" rel="tag">EIFS</a>, <a href="https://mrncciew.com/tag/interframe-spaces/" rel="tag">Interframe Spaces</a>, <a href="https://mrncciew.com/tag/rifs/" rel="tag">RIFS</a>, <a href="https://mrncciew.com/tag/sifs/" rel="tag">SIFS</a></p>	</div><!-- end .post-extras -->
+
+		<div class="post-entry">
+			<p><span style="color:#00ffff;">DCF</span>– <span style="color:#ff00ff;">Distributed Coordination Function</span> : <span style="color:#00ff00;">Non-QoS WLAN</span><br>
+<span style="color:#00ffff;">HCF with EDCA</span> – <span style="color:#ff00ff;">Hybrid Coordination Function</span> : <span style="color:#00ff00;">QoS WLAN</span><br>
+<span style="color:#ff00ff;">EDCA</span>– <span style="color:#ff00ff;">Enhanced Distributed Channel Access<br>
+</span><span style="color:#00ffff;">PCF</span> – <span style="color:#ff00ff;">Point Coordination Function</span> (<em><span style="color:#00ff00;">not implemented practically</span></em>)</p>
+<p><span style="color:#00ffff;">Physical Carrier Sense</span>: <span style="color:#ff00ff;">Layer 1 – Clear Channel Assessment (CCA)</span><br>
+– ED (Energy Detection)<br>
+– CS (Carrier Sense or Preamble detection)<br>
+<span style="color:#00ffff;">Virtual Carrier Sense</span>&nbsp; : <span style="color:#ff00ff;">Layer 2 – Network Allocation Vector (NAV</span>) – Duration value set in each frame’s MAC header where other stations set their NAV to this if the sense medium is busy.</p>
+<p>These are the steps a station go through prior to transmit a frame to the wireless medium<br>
+1. STAs use a physical carrier sense (Clear Channel Assessment—CCA) to determine if the wireless medium is busy.<br>
+2. STAs use virtual carrier sense (Network Allocation Vector—NAV) to detect if the medium is busy. When the virtual timer (NAV) reaches zero, STAs may proceed.<br>
+3. If conditions 1 and 2 are met, STAs wait the necessary IFS interval, as prescribed by the protocol.<br>
+4. If conditions 1 and 2 are met through the duration of condition 3, STAs generate a random backoff number in accordance with the range of allowed values.<br>
+5. STAs begin decrementing the backoff timer by one for every slot time duration that the wireless medium is idle.<br>
+6. After decrementing the backoff value to zero, with an idle medium, a STA may transmit the allotted frame exchange, in accordance with the parameters of the obtained transmission opportunity (TXOP).<br>
+7. If another STA transmits before Step 6 is completed, STAs observe steps 1, 2, 3, and 5 until the backoff timer is equal to zero.<br>
+8. After a successful transmission, repeat as needed. Below diagram show the flow of the above steps (source : 802.11 Arbitration CWNP white paper)</p>
+<p><a href="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-01.png"><img data-attachment-id="5250" data-permalink="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/cwap-contention-01/" data-orig-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-01.png?w=529&amp;h=398" data-orig-size="699,526" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="CWAP – Contention-01" data-image-description="" data-medium-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-01.png?w=529&amp;h=398?w=300" data-large-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-01.png?w=529&amp;h=398?w=529" class="aligncenter size-full wp-image-5250" src="./values_files/cwap-contention-01.png" alt="CWAP - Contention-01" width="529" height="398" srcset="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-01.png?w=529&amp;h=398 529w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-01.png?w=150&amp;h=113 150w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-01.png?w=300&amp;h=226 300w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-01.png 699w" sizes="(max-width: 529px) 100vw, 529px"></a><span style="text-decoration:underline;"><span style="color:#00ffff;text-decoration:underline;">Inter Frame Spaces</span></span><br>
+After each frame transmission 802.11 protocol require an idle period on the medium called Inter Frame Space (IFS). The length of the IFS is depend on previous frame type, following frame type, access category, coordination function in use &amp; PHY type as well. The purpose of an IFS is both to provide a buffer between frames to avoid interference as well as to add control and to prioritize frame transmissions.</p>
+<p><span style="text-decoration:underline;"><span style="color:#00ffff;text-decoration:underline;">SIFS (Shortest Inter Frame Space)</span></span><br>
+SIFS are used within all of the different coordination functions. For 802.11-2007, SIFS is the shortest of the IFSs and is used prior to ACK and CTS frames as well as the second or subsequent MPDUs of a fragment burst. However, with 802.11n, a shorter IFS (RIFS) was introduced.</p>
+<p>SIFS for 802.11b/g/n (2.4 GHz) = <span style="color:#00ff00;">10μS</span><br>
+SIFS for 802.11a/n/ac (5 GHz)&nbsp; = <span style="color:#00ff00;">16μS</span></p>
+<p><span style="text-decoration:underline;"><span style="color:#00ffff;text-decoration:underline;">RIFS (Reduced Inter Frame Space)</span></span><br>
+RIFS were introduced with 802.11n to improve efficiency for transmissions to the same receiver in which a SIFS-separated response is not required, such as a transmission burst (CFB-Contention Free Burst)</p>
+<p>RIFS = <span style="color:#00ff00;">2μS </span></p>
+<p>802.11n standard use RIFS &amp; Block Acknowledgement (mandatory in 802.11n). RIFS is used only when Block ACK is enabled. When Block ACK are used, data frames of a CFB may send consecutively without interruption by ACK. At the end of CFB, Tx Station will simply send BAR (BlockACKRequest) &amp; receiving a single Block Acknowledgement (BA).</p>
+<p>Below shows the use of RIFS during a 802.11n frame transmission. (page 260 CWAP study guide). Note that AIFS used initially as of QoS Data frames.</p>
+<p><a href="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-07.png"><img data-attachment-id="5268" data-permalink="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/cwap-contention-07/" data-orig-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-07.png?w=529" data-orig-size="524,250" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="CWAP – Contention-07" data-image-description="" data-medium-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-07.png?w=529?w=300" data-large-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-07.png?w=529?w=524" class="aligncenter size-full wp-image-5268" src="./values_files/cwap-contention-07.png" alt="CWAP - Contention-07" srcset="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-07.png 524w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-07.png?w=150 150w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-07.png?w=300 300w" sizes="(max-width: 524px) 100vw, 524px"></a><span style="text-decoration:underline;"><span style="color:#00ffff;text-decoration:underline;">DIFS (Distributed Inter Frame Space)<br>
+</span></span>When a STA desires to transmit a data frame (MPDU) or management frame (MMPDU) for the first time within a DCF network, the duration of a DIFS must be observed after the previous frame’s completion. The duration of a DIFS is longer than both the SIFS and PIFS.</p>
+<p><span style="color:#ff00ff;">DIFS = SIFS + 2x SlotTime</span></p>
+<p>SlotTime for 802.11a/n/ac (5 GHz) = <span style="color:#00ff00;">9μS</span><br>
+SlotTime for 802.11g/n (2.4 GHz – HT or ERP) = <span style="color:#00ff00;">9μS</span>&nbsp; with <span style="color:#00ffff;">short preamble</span><br>
+SlotTime for 802.11g/n (2.4 GHz – HT or ERP) = <span style="color:#00ff00;">20μS</span> with <span style="color:#00ffff;">long preamble</span><br>
+SlotTime for 802.11b/g/n (2.4 GHz – DSS ) = <span style="color:#00ff00;">20μS</span></p>
+<p><span style="text-decoration:underline;"><span style="color:#00ffff;text-decoration:underline;">EIFS (Extended Inter Frame Space)</span></span><br>
+The EIFS value is used by STAs that have received a frame that contained errors. By using this longer IFS, the transmitting station will have enough time to recognize that the frame was not received properly before the receiving station commences transmission. If, during the EIFS duration, the STA receives a frame correctly (regardless of intended recipient), it will resume using DIFS or AIFS, as appropriate</p>
+<p><span style="color:#ff00ff;">EIFS (in DCF)&nbsp; = SIFS + DIFS + ACK_Tx_Time</span></p>
+<p>EIFS 802.11b/g/n devices using DSS = <span style="color:#00ff00;">364μS<br>
+</span> EIFS 802.11g/n devices using OFDM = <span style="color:#00ff00;">160μS</span><br>
+EIFS 802.11a/n devices (5GHz)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; = <span style="color:#00ff00;">160μS</span></p>
+<p><span style="color:#ff00ff;">EIFS (in EDCA)&nbsp; = SIFS + AIFS[AC] + ACK_Tx_Time</span></p>
+<p>Below diagram show the arbitration process after receipt of&nbsp; a corrupted frame, where all other stations (except the transmitter) wait for EIFS.</p>
+<p><a href="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-10.png"><img data-attachment-id="5269" data-permalink="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/cwap-contention-10/" data-orig-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-10.png?w=529" data-orig-size="492,240" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="CWAP – Contention-10" data-image-description="" data-medium-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-10.png?w=529?w=300" data-large-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-10.png?w=529?w=492" class="aligncenter size-full wp-image-5269" src="./values_files/cwap-contention-10.png" alt="CWAP - Contention-10" srcset="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-10.png 492w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-10.png?w=150 150w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-10.png?w=300 300w" sizes="(max-width: 492px) 100vw, 492px"></a><span style="color:#ff00ff;">Near/Far Problem:</span> Due to side effect of EIFS, stations near to AP could cause problem to stations at Far(hence called Near/Far problem). When data send between AP &amp; near by stations, they can use high data rates where far stations cannot be demodulate &amp; interpret as corrupted frame. So far stations stay quiet for EIFS, while the near station will be allowed to use DIFS or AIFS. The use of DIFS will give nearby station higher priority &amp; get more opportunity to transmit while far station remain quiet.</p>
+<p><span style="text-decoration:underline;"><span style="color:#00ffff;text-decoration:underline;">PIFS (PCF Inter Frame Spaces)</span></span><br>
+PIFS are used by STAs during the contention-free period (CFP) in PCF mode. Because PCF has not been implemented in 802.11 devices, you will not see PIFS used for this purpose. In order to gain priority over other STAs during contention, the AP can transmit a Channel Switch Announcement (802.11h) frame after observing a PIFS</p>
+<p><span style="color:#ff00ff;">PIFS = SIFS + SlotTime</span></p>
+<p>Below chart summarize SIFS,DIFS,PIFS &amp; SlotTime values described earlier.</p>
+<p><a href="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-11.png"><img data-attachment-id="5270" data-permalink="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/cwap-contention-11/" data-orig-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-11.png?w=529&amp;h=328" data-orig-size="599,372" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="CWAP – Contention-11" data-image-description="" data-medium-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-11.png?w=529&amp;h=328?w=300" data-large-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-11.png?w=529&amp;h=328?w=529" class="aligncenter size-full wp-image-5270" src="./values_files/cwap-contention-11.png" alt="CWAP - Contention-11" width="529" height="328" srcset="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-11.png?w=529&amp;h=328 529w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-11.png?w=150&amp;h=93 150w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-11.png?w=300&amp;h=186 300w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-11.png 599w" sizes="(max-width: 529px) 100vw, 529px"></a><span style="text-decoration:underline;"><span style="color:#00ffff;text-decoration:underline;">AIFS (Arbitration Inter Frame Space)</span></span><br>
+The AIFS shall be used by <span style="color:#ff00ff;">QoS STAs</span> to transmit all data frames (MPDUs), all management frames (MMPDUs), and the following control frames: PS-Poll, RTS, CTS (when not transmitted as a response to the RTS), BlockAckReq, and BlockAck (when not transmitted as a response to the BlockAckReq).</p>
+<p>The number of slot times used in the AIFS is called the<span style="color:#ff00ff;"> Arbitration Inter Frame Space Number</span> (<span style="color:#00ffff;">AIFSN</span>). 802.11e specifies 4 access categories (<span style="color:#00ffff;">AV_VO</span> : <span style="color:#ff00ff;">Voice</span>, <span style="color:#00ffff;">AC_VI</span> : <span style="color:#ff00ff;">Video</span>, <span style="color:#00ffff;">AC_BE</span> : <span style="color:#ff00ff;">Best Effort</span> &amp; <span style="color:#00ffff;">AC_BK</span> : <span style="color:#ff00ff;">Background</span>). <span style="color:#ff00ff;">Voice &amp; Video</span> category use <span style="color:#00ff00;">2 slottimes</span> by default. <span style="color:#ff00ff;">Best Effort</span> category use <span style="color:#00ff00;">3 slottimes</span> where as <span style="color:#ff00ff;">Background</span> traffic use <span style="color:#00ff00;">7 slottimes</span> by default.</p>
+<p>Below is the formula to calcluate AIFS for&nbsp; a given Access Category (AC)</p>
+<p><span style="color:#ff00ff;">AIFS[AC] = AIFSN[AC] × SlotTime + SIFSTime</span></p>
+<p><span style="text-decoration:underline;color:#00ffff;">Contention Window/Backoff Timer</span><br>
+After a STA has observed an idle wireless medium with carrier sense (CS) for the appropriate IFS interval (DIFS, EIFS, or AIFS). To contend for medium access after the IFS, each station selects a backoff value called random backoff period and is selected at random by the STA from a window of possible values called a contention window (CW)&nbsp; calculated using the below formula where x is a value increments with each failed frame.</p>
+<p><span style="color:#ff00ff;">CW = 2^x -1</span></p>
+<p>For <span style="color:#ff00ff;">DSS</span> based networks <span style="color:#00ff00;">x starts at 5</span> which resulting CW of<span style="color:#00ff00;"> 31</span>, for <span style="color:#ff00ff;">OFDM</span> based networks,<span style="color:#00ff00;"> x starts at 4</span> which result in a CW of <span style="color:#00ff00;">15</span>. In <span style="color:#ff00ff;">both DSS &amp; OFDM</span> x values stops incrementing at <span style="color:#00ff00;">10</span> which&nbsp; result CW of <span style="color:#00ff00;">1023</span>. Below table summarize these values for DCF network.</p>
+<p><a href="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-05.png"><img data-attachment-id="5263" data-permalink="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/cwap-contention-05/" data-orig-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-05.png?w=529" data-orig-size="459,296" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="CWAP – Contention-05" data-image-description="" data-medium-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-05.png?w=529?w=300" data-large-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-05.png?w=529?w=459" class="aligncenter size-full wp-image-5263" src="./values_files/cwap-contention-05.png" alt="CWAP - Contention-05" srcset="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-05.png 459w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-05.png?w=150 150w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-05.png?w=300 300w" sizes="(max-width: 459px) 100vw, 459px"></a>In EDCA medium access (QoS stations &amp; AP), each AC has a CW_min &amp; CW_max. These default values are derived from the following formula.</p>
+<p><a href="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-06.png"><img data-attachment-id="5266" data-permalink="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/cwap-contention-06/" data-orig-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-06.png?w=529" data-orig-size="498,310" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="CWAP – Contention-06" data-image-description="" data-medium-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-06.png?w=529?w=300" data-large-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-06.png?w=529?w=498" class="aligncenter size-full wp-image-5266" src="./values_files/cwap-contention-06.png" alt="CWAP - Contention-06" srcset="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-06.png 498w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-06.png?w=150 150w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-06.png?w=300 300w" sizes="(max-width: 498px) 100vw, 498px"></a>For example, in OFDM aCWmin is 15. This result <span style="color:#ff00ff;">CWmin for AC_VO =3</span> {[(15+1)/4] – 1} &amp; <span style="color:#ff00ff;">CWmax for AC_VO=7</span> {[(15+1)/2]-1}. In the same way <span style="color:#ff00ff;">CWmin for AC_VI=7</span> {[(15+1)/2] -1} &amp; <span style="color:#ff00ff;">CWmax for AC_VI=15</span>. For <span style="color:#ff00ff;">AC_BE &amp; AC_BK</span> those values are <span style="color:#ff00ff;">15</span> &amp; <span style="color:#ff00ff;">1023</span> respectively.</p>
+<p>For an initial attempt at a frame transmission, the CW is the aCWmin value.For each attempted retransmission, the CW is increased exponentially until the CW reaches the aCWmax. In this case, the CW remains at the aCWmax until a successful frame sequence is performed or the number of attempted retransmissions reaches the max retry count. Below diagram shows this concept</p>
+<p><a href="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-03.png"><img data-attachment-id="5260" data-permalink="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/cwap-contention-03/" data-orig-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-03.png?w=529&amp;h=410" data-orig-size="549,426" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="CWAP – Contention-03" data-image-description="" data-medium-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-03.png?w=529&amp;h=410?w=300" data-large-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-03.png?w=529&amp;h=410?w=529" class="aligncenter size-full wp-image-5260" src="./values_files/cwap-contention-03.png" alt="CWAP - Contention-03" width="529" height="410" srcset="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-03.png?w=529&amp;h=410 529w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-03.png?w=150&amp;h=116 150w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-03.png?w=300&amp;h=233 300w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-03.png 549w" sizes="(max-width: 529px) 100vw, 529px"></a><span style="text-decoration:underline;"><span style="color:#00ffff;text-decoration:underline;">TXOP- Transmit Opportunity</span></span><br>
+EDCA introduce this TXOP which is a time period where one device, called TXOP holder has unfettered acccess to the channel for data transmission. The data frame transmissions within&nbsp; a TXOP are called a “<span style="color:#ff00ff;">contention free burst -CFB</span>” During a TXOP, only the data that makes up a CFB and the ACK for that data may access the channel.</p>
+<p>802.11e standard defines default TXOP limit value for each AC, but values can be configured on AP. TXOP limit are set in intervals of <span style="color:#00ff00;">32µs</span> (microseconds). Default TXOP is <span style="color:#00ff00;">47</span> for <span style="color:#ff00ff;">AC_VO</span> (47×32=<span style="color:#00ff00;">1504µs</span>) for OFDM. It is <span style="color:#00ff00;">94</span> for <span style="color:#ff00ff;">AC_VI</span> (94×32=<span style="color:#00ff00;">3008µs</span>) . Note that for <span style="color:#ff00ff;">AC_BE &amp; AC_BK</span> always TXOP set to <span style="color:#00ff00;">0</span>,<em><span style="color:#ff00ff;"> in other words those traffic category always has to send one frame at at time</span></em> (no CFB).</p>
+<p>Here is the default settings (AIFSN, CW_min, CW_max, x value, TXOP, AIFS) of those four access categories.</p>
+<p><a href="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-02.png"><img data-attachment-id="5257" data-permalink="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/cwap-contention-02/" data-orig-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-02.png?w=529&amp;h=147" data-orig-size="756,211" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="CWAP – Contention-02" data-image-description="" data-medium-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-02.png?w=529&amp;h=147?w=300" data-large-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-02.png?w=529&amp;h=147?w=529" class="aligncenter size-full wp-image-5257" src="./values_files/cwap-contention-02.png" alt="CWAP - Contention-02" width="529" height="147" srcset="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-02.png?w=527&amp;h=147 527w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-02.png?w=150&amp;h=42 150w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-02.png?w=300&amp;h=84 300w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-02.png 756w" sizes="(max-width: 529px) 100vw, 529px"></a>Here is a beacon frame of a 802.11a radio where you can see those default settings as well.</p>
+<p><a href="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-08.png"><img data-attachment-id="5256" data-permalink="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/cwap-contention-08/" data-orig-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-08.png?w=529&amp;h=828" data-orig-size="746,1169" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="CWAP – Contention-08" data-image-description="" data-medium-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-08.png?w=529&amp;h=828?w=191" data-large-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-08.png?w=529&amp;h=828?w=529" class="aligncenter size-full wp-image-5256" src="./values_files/cwap-contention-08.png" alt="CWAP - Contention-08" width="529" height="828" srcset="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-08.png?w=529&amp;h=828 529w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-08.png?w=96&amp;h=150 96w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-08.png?w=191&amp;h=300 191w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-08.png 746w" sizes="(max-width: 529px) 100vw, 529px"></a>As explained these EDCA value can be configurable on AP. Here is on my Cisco WLC (3850) I have changed the default setting to optimized Voice &amp; Video. “<span style="color:#ff00ff;">wmm-default</span>” is the default setting in this WLC.</p>
+<pre>3850-1(config)#<span style="color:#00ffff;">ap dot11 5ghz shutdown</span> 
+3850-1(config)#ap dot11 5ghz edca-parameters ?
+&nbsp; custom-voice&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Enable Custom Voice parameters for 802.11a
+&nbsp; <span style="color:#ff00ff;">optimized-video-voice</span>&nbsp; Enable combined video-voice-optimized parameters for 802.11a
+&nbsp; optimized-voice&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Enable non-spectralink voice-optimized parameters for 802.11a
+&nbsp; svp-voice&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Enable SpectraLink Voice Priority (SVP) parameters for 802.11a
+&nbsp; <span style="color:#ff00ff;">wmm-default</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Enable WMM default parameters for 802.11a
+3850-1(config)#<span style="color:#00ffff;">ap dot11 5ghz edca-parameters optimized-video-voice</span> 
+3850-1(config)#<span style="color:#00ffff;">no ap dot11 5ghz shutdown</span>
+
+3850-1#<span style="color:#00ffff;">show ap dot11 5ghz network</span> | <span style="color:#ff00ff;">in EDCA</span>
+EDCA profile type check : <span style="color:#ff00ff;">optimized-video-voice</span> 
+</pre>
+<p>Once you change this, you can see AP advertising these values on WMM parameters &amp; you can see values change to give priority for Voice &amp; Video.</p>
+<p><a href="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-04.png"><img data-attachment-id="5262" data-permalink="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/cwap-contention-04/" data-orig-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-04.png?w=529&amp;h=205" data-orig-size="551,214" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="CWAP – Contention-04" data-image-description="" data-medium-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-04.png?w=529&amp;h=205?w=300" data-large-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-04.png?w=529&amp;h=205?w=529" class="aligncenter size-full wp-image-5262" src="./values_files/cwap-contention-04.png" alt="CWAP - Contention-04" width="529" height="205" srcset="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-04.png?w=529&amp;h=205 529w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-04.png?w=150&amp;h=58 150w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-04.png?w=300&amp;h=117 300w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-04.png 551w" sizes="(max-width: 529px) 100vw, 529px"></a>Here is a beacon frame capture showing those modified values.</p>
+<p><a href="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-09.png"><img data-attachment-id="5254" data-permalink="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/cwap-contention-09/" data-orig-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-09.png?w=529&amp;h=815" data-orig-size="727,1121" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="CWAP – Contention-09" data-image-description="" data-medium-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-09.png?w=529&amp;h=815?w=195" data-large-file="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-09.png?w=529&amp;h=815?w=529" class="aligncenter size-full wp-image-5254" src="./values_files/cwap-contention-09.png" alt="CWAP - Contention-09" width="529" height="815" srcset="https://mrncciew.files.wordpress.com/2014/10/cwap-contention-09.png?w=529&amp;h=815 529w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-09.png?w=97&amp;h=150 97w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-09.png?w=195&amp;h=300 195w, https://mrncciew.files.wordpress.com/2014/10/cwap-contention-09.png 727w" sizes="(max-width: 529px) 100vw, 529px"></a>Reference<br>
+1. CWAP Official Study Guide – Chapter 7<br>
+2. <a href="http://www.cwnp.com/uploads/802-11_arbitration.pdf">802.11 Arbitration</a> – CWNP White Paper<br>
+3. <a href="https://mrncciew.files.wordpress.com/2014/10/802-11-qos-overview.pdf">802.11-QoS-Overview</a></p>
+<div id="jp-post-flair" class="sharedaddy sharedaddy-dark sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-5246" class="share-twitter sd-button share-icon" href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-5246" class="share-facebook sd-button share-icon" href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/?share=facebook&amp;nb=1" target="_blank" title="Share on Facebook"><span>Facebook</span></a></li><li class="share-linkedin"><a rel="nofollow" data-shared="sharing-linkedin-5246" class="share-linkedin sd-button share-icon" href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/?share=linkedin&amp;nb=1" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-5246" class="share-google-plus-1 sd-button share-icon" href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-end"></li></ul></div></div></div><div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-loaded" id="like-post-wrapper-34785242-5246-5acafa6ca2636" data-src="//widgets.wp.com/likes/index.html?ver=20180319#blog_id=34785242&amp;post_id=5246&amp;origin=mrncciew.wordpress.com&amp;obj_id=34785242-5246-5acafa6ca2636" data-name="like-post-frame-34785242-5246-5acafa6ca2636"><h3 class="sd-title">Like this:</h3><div class="likes-widget-placeholder post-likes-widget-placeholder" style="height: 55px; display: none;"><span class="button"><span>Like</span></span> <span class="loading">Loading...</span></div><iframe class="post-likes-widget jetpack-likes-widget" name="like-post-frame-34785242-5246-5acafa6ca2636" height="55px" width="100%" frameborder="0" src="./values_files/index.html"></iframe><span class="sd-text-color"></span><a class="sd-link-color"></a></div>
+<div id="jp-relatedposts" class="jp-relatedposts" style="display: block;">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<div class="jp-relatedposts-items jp-relatedposts-items-minimal"><p class="jp-relatedposts-post jp-relatedposts-post0" data-post-id="5550" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://mrncciew.com/2014/10/25/cwap-mac-header-durationid/" title="CWAP - MAC Header : Duration/ID
+
+Duration/ID field is 2 bytes(16bits) long field in the 802.11 MAC header. Here is the 16 bit of Duration/ID fieldIn 802.11, Duration/ID field can be used for 3 different reason 1. Virtual Carrier Sense - This is the main purpose which used to reset the NAV timer of the other…" rel="nofollow" data-origin="5246" data-position="0">CWAP - MAC Header : Duration/ID</a></span><span class="jp-relatedposts-post-context">In "CWAP"</span></p><p class="jp-relatedposts-post jp-relatedposts-post1" data-post-id="5570" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://mrncciew.com/2014/10/26/cwap-802-11-ctrl-rtscts/" title="CWAP - 802.11 Ctrl : RTS/CTS
+
+RTS (Request to Send) &amp; CTS (Clear to Send) frames are used to enhance the virtual carrier sense process.  It is possible for a client station to be able to communicate with a AP, but not able to hear or be heard by any of the other client stations. This…" rel="nofollow" data-origin="5246" data-position="1">CWAP - 802.11 Ctrl : RTS/CTS</a></span><span class="jp-relatedposts-post-context">In "CWAP"</span></p><p class="jp-relatedposts-post jp-relatedposts-post2" data-post-id="5039" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://mrncciew.com/2014/10/03/cwap-mac-header-qos-control/" title="CWAP - MAC Header : QoS Control
+
+QoS Control is a 16-bit field that identifies the Quality of Service (QoS) parameter of a data frame (only in data frame type QoS-Data).QoS Control field is comprised of five subfields 1. [bit 0-3 ] Traffic Identifier (TID) 2. [bit 4 ]    End of Service Period (EOSP) 3. [bit 5-6…" rel="nofollow" data-origin="5246" data-position="2">CWAP - MAC Header : QoS Control</a></span><span class="jp-relatedposts-post-context">In "CWAP"</span></p></div></div></div>					</div><!-- end .post-entry -->
+	</div><!-- end .post-content -->
+
+	</article><!-- #post-5246 -->
+
+			<nav id="nav-below" class="clear-fix">
+				<h1 class="assistive-text">Post navigation</h1>
+				<span class="nav-previous"><a href="https://mrncciew.com/2014/10/11/802-11-mgmt-deauth-disassociation-frames/" rel="prev">← Previous post</a></span>
+				<span class="nav-next"><a href="https://mrncciew.com/2014/10/13/cwap-802-11-data-frame-types/" rel="next">Next post →</a></span>
+			</nav><!-- #nav-below -->
+
+			<div id="comments">
+	
+	
+			<h3 id="comments-title">
+			<span>10</span> thoughts on “CWAP – 802.11 Medium&nbsp;Contention”		</h3>
+
+		
+		<ol class="commentlist">
+			
+			<li class="comment even thread-even depth-1 parent highlander-comment" id="comment-11335">
+
+				<div class="comment-heading clear-fix">
+					<p class="comment-author">
+						<img alt="" src="./values_files/13192b8c9af09f06b0f600219176d9e3" class="avatar avatar-32 grav-hashed grav-hijack" height="32" width="32" id="grav-13192b8c9af09f06b0f600219176d9e3-0">						<span>Franklin</span> <em>said:</em>					</p>
+					<p class="comment-date">
+						<a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#comment-11335"><time pubdate="" datetime="2014-11-06T16:40:18+00:00">November 6, 2014 at 4:40 pm</time></a>					</p>
+				</div>
+				<div class="comment-text">
+					<p>How to understand DIFS, PIFS and SIFS work with good example?</p>
+										<p class="reply-link"><a rel="nofollow" class="comment-reply-link" href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/?replytocom=11335#respond" onclick="return addComment.moveForm( &quot;comment-11335&quot;, &quot;11335&quot;, &quot;respond&quot;, &quot;5246&quot; )" aria-label="Reply to Franklin">Reply</a></p>
+					<p class="edit-comment"></p>
+				</div>
+		<ul class="children">
+
+			<li class="comment byuser comment-author-nayarasi bypostauthor odd alt depth-2 highlander-comment" id="comment-11351">
+
+				<div class="comment-heading clear-fix">
+					<p class="comment-author">
+						<img alt="" src="./values_files/e6bfc472b18c36eb851ccc502bfb036d" class="avatar avatar-32 grav-hashed grav-hijack" height="32" width="32" id="grav-e6bfc472b18c36eb851ccc502bfb036d-0">						<span><a href="https://mrncciew.wordpress.com/" rel="external nofollow" class="url">nayarasi</a></span> <em>said:</em>					</p>
+					<p class="comment-date">
+						<a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#comment-11351"><time pubdate="" datetime="2014-11-07T09:25:55+00:00">November 7, 2014 at 9:25 am</time></a>					</p>
+				</div>
+				<div class="comment-text">
+					<p>Here is another good document explain this. See if that helps</p>
+<p><a href="http://www.ieee802.org/1/files/public/docs2008/avb-phkl-802-11-qos-overview-0811-1.pdf" rel="nofollow">http://www.ieee802.org/1/files/public/docs2008/avb-phkl-802-11-qos-overview-0811-1.pdf</a></p>
+<p>Rasika</p>
+										<p class="reply-link"><a rel="nofollow" class="comment-reply-link" href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/?replytocom=11351#respond" onclick="return addComment.moveForm( &quot;comment-11351&quot;, &quot;11351&quot;, &quot;respond&quot;, &quot;5246&quot; )" aria-label="Reply to nayarasi">Reply</a></p>
+					<p class="edit-comment"></p>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+			<li class="comment even thread-odd thread-alt depth-1 parent highlander-comment" id="comment-22637">
+
+				<div class="comment-heading clear-fix">
+					<p class="comment-author">
+						<img alt="" src="./values_files/5f21ac2f61313ab07f5c04b2cbefab0d" class="avatar avatar-32 grav-hashed grav-hijack" height="32" width="32" id="grav-5f21ac2f61313ab07f5c04b2cbefab0d-0">						<span>Sai Pavan</span> <em>said:</em>					</p>
+					<p class="comment-date">
+						<a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#comment-22637"><time pubdate="" datetime="2016-04-07T09:21:23+00:00">April 7, 2016 at 9:21 am</time></a>					</p>
+				</div>
+				<div class="comment-text">
+					<p>Great Post and blog. Will definitely follow the blog.</p>
+										<p class="reply-link"><a rel="nofollow" class="comment-reply-link" href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/?replytocom=22637#respond" onclick="return addComment.moveForm( &quot;comment-22637&quot;, &quot;22637&quot;, &quot;respond&quot;, &quot;5246&quot; )" aria-label="Reply to Sai Pavan">Reply</a></p>
+					<p class="edit-comment"></p>
+				</div>
+		<ul class="children">
+
+			<li class="comment byuser comment-author-nayarasi bypostauthor odd alt depth-2 highlander-comment" id="comment-22692">
+
+				<div class="comment-heading clear-fix">
+					<p class="comment-author">
+						<img alt="" src="./values_files/e6bfc472b18c36eb851ccc502bfb036d" class="avatar avatar-32 grav-hashed grav-hijack" height="32" width="32" id="grav-e6bfc472b18c36eb851ccc502bfb036d-1">						<span><a href="https://mrncciew.wordpress.com/" rel="external nofollow" class="url">nayarasi</a></span> <em>said:</em>					</p>
+					<p class="comment-date">
+						<a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#comment-22692"><time pubdate="" datetime="2016-04-11T15:09:54+00:00">April 11, 2016 at 3:09 pm</time></a>					</p>
+				</div>
+				<div class="comment-text">
+					<p>Thanks Pavan.</p>
+										<p class="reply-link"><a rel="nofollow" class="comment-reply-link" href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/?replytocom=22692#respond" onclick="return addComment.moveForm( &quot;comment-22692&quot;, &quot;22692&quot;, &quot;respond&quot;, &quot;5246&quot; )" aria-label="Reply to nayarasi">Reply</a></p>
+					<p class="edit-comment"></p>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+			<li class="comment even thread-even depth-1 highlander-comment" id="comment-23839">
+
+				<div class="comment-heading clear-fix">
+					<p class="comment-author">
+						<img alt="" src="./values_files/f6346ac53ea9e44bb0702598afb85635" class="avatar avatar-32 grav-hashed grav-hijack" height="32" width="32" id="grav-f6346ac53ea9e44bb0702598afb85635-0">						<span>Mike</span> <em>said:</em>					</p>
+					<p class="comment-date">
+						<a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#comment-23839"><time pubdate="" datetime="2016-07-07T09:40:51+00:00">July 7, 2016 at 9:40 am</time></a>					</p>
+				</div>
+				<div class="comment-text">
+					<p>Great post, this accompanied with some CWDP practice questions is helping me wrap my head around 802.11 contention. One thing that is not clear to me is why AIFS is longer than DIFS? I understand that EDCA is an extension of DCF, however I don’t understand how they interoperate within a single BSS. By enabling EDCA are you directing clients that DIFS (DCF) is no longer used and only AIFS (EDCA) interframe spacing is being observered? If that is true, are non 802.11e compliant devices unable to join the BSS when EDCA is enabled? I guess I don’t understand how (and if) DCF clients interoperate with EDCA clients when DIFS is shorter than AIFS. Thanks! Mike</p>
+										<p class="reply-link"><a rel="nofollow" class="comment-reply-link" href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/?replytocom=23839#respond" onclick="return addComment.moveForm( &quot;comment-23839&quot;, &quot;23839&quot;, &quot;respond&quot;, &quot;5246&quot; )" aria-label="Reply to Mike">Reply</a></p>
+					<p class="edit-comment"></p>
+				</div>
+		</li><!-- #comment-## -->
+
+			<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-23980">
+
+				<div class="comment-heading clear-fix">
+					<p class="comment-author">
+						<img alt="" src="./values_files/40dcea0c2dac53258abe5c9ddae97705" class="avatar avatar-32 grav-hashed grav-hijack" height="32" width="32" id="grav-40dcea0c2dac53258abe5c9ddae97705-0">						<span><a href="http://gravatar.com/vlado0302" rel="external nofollow" class="url">Vladirmir</a></span> <em>said:</em>					</p>
+					<p class="comment-date">
+						<a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#comment-23980"><time pubdate="" datetime="2016-07-18T02:39:07+00:00">July 18, 2016 at 2:39 am</time></a>					</p>
+				</div>
+				<div class="comment-text">
+					<p>Hi,</p>
+<p>Thank you for and educational article.</p>
+<p>I have a question. </p>
+<p>This is a Maximum throughput calculation for 802.11a:</p>
+<p> MTa (8k * Ldata)/(kTdata+Tack+Tdifs+Tsifs+(CWmin-1)Tslot/2).</p>
+<p>Would you be able to tell me what is the maximum throughput formula for 802.11n please?</p>
+<p>Thank you.</p>
+<p>Regards,</p>
+<p>Vladimir</p>
+										<p class="reply-link"><a rel="nofollow" class="comment-reply-link" href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/?replytocom=23980#respond" onclick="return addComment.moveForm( &quot;comment-23980&quot;, &quot;23980&quot;, &quot;respond&quot;, &quot;5246&quot; )" aria-label="Reply to Vladirmir">Reply</a></p>
+					<p class="edit-comment"></p>
+				</div>
+		</li><!-- #comment-## -->
+
+			<li class="comment byuser comment-author-mali77 even thread-even depth-1 highlander-comment" id="comment-24927">
+
+				<div class="comment-heading clear-fix">
+					<p class="comment-author">
+						<img alt="" src="./values_files/e236292ee7c8c596f0d942db4364eadd" class="avatar avatar-32 grav-hashed grav-hijack" height="32" width="32" id="grav-e236292ee7c8c596f0d942db4364eadd-0">						<span><a href="http://gravatar.com/mali77" rel="external nofollow" class="url">mali77</a></span> <em>said:</em>					</p>
+					<p class="comment-date">
+						<a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#comment-24927"><time pubdate="" datetime="2016-11-12T03:38:41+00:00">November 12, 2016 at 3:38 am</time></a>					</p>
+				</div>
+				<div class="comment-text">
+					<p>This is great been going crazy trying to understand this in depth.  In short we basically have:<br>
+1- CCA<br>
+2- NAV<br>
+3- DIFS<br>
+4- CW<br>
+5- Tx</p>
+<p>NAV portion was confusing me a bit with regards to DCF and was checking this link out:<br>
+<a href="http://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Mobility/emob41dg/emob41dg-wrapper/ch5_QoS.html#wp1021972" rel="nofollow">http://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Mobility/emob41dg/emob41dg-wrapper/ch5_QoS.html#wp1021972</a></p>
+<p>per this link I do not see any mention of NAV in any of the steps.  Did they just miss that step in there?</p>
+<p>Thank you</p>
+										<p class="reply-link"><a rel="nofollow" class="comment-reply-link" href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/?replytocom=24927#respond" onclick="return addComment.moveForm( &quot;comment-24927&quot;, &quot;24927&quot;, &quot;respond&quot;, &quot;5246&quot; )" aria-label="Reply to mali77">Reply</a></p>
+					<p class="edit-comment"></p>
+				</div>
+		</li><!-- #comment-## -->
+			<li class="comment pingback">
+				<div class="comment-text">
+					<p>Pingback: <a href="http://news.mali77.com/index.php/2017/02/my-ccna-wireless-journey/" rel="external nofollow" class="url">My CCNA Wireless Journey | » Ali's Technology Blog</a></p>
+					<p class="edit-comment"></p>
+				</div>
+			</li><!-- #comment-## -->
+			<li class="comment pingback">
+				<div class="comment-text">
+					<p>Pingback: <a href="http://robrobstation.com/2016/04/17/wi-fi-csmaca-going-deep/" rel="external nofollow" class="url">Wi-Fi CSMA/CA – Going Deep – ROBROBSTATION</a></p>
+					<p class="edit-comment"></p>
+				</div>
+			</li><!-- #comment-## -->
+			<li class="comment pingback">
+				<div class="comment-text">
+					<p>Pingback: <a href="https://netgab.net/web/2017/12/05/cisco-wlc-edca-timers/" rel="external nofollow" class="url">Cisco WLC: EDCA timers - NetGab - The daily networking madness</a></p>
+					<p class="edit-comment"></p>
+				</div>
+			</li><!-- #comment-## -->
+		</ol>
+
+		
+	
+		<div id="respond" class="comment-respond js">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://mrncciew.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="2b1e77056f"><input type="hidden" name="_wp_http_referer" value="/2014/10/12/cwap-802-11-medium-contention/">
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest">
+
+<div class="comment-form-field comment-textarea">
+	
+	<div id="comment-form-comment"><textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif; font-size: 14px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; text-decoration: none solid rgba(255, 255, 255, 0.8); word-spacing: 0px; text-indent: 0px; line-height: normal; width: 536.75px;" class="autosizejs "></textarea><textarea id="comment" name="comment" title="Enter your comment here..." placeholder="Enter your comment here..." style="height: 36px; overflow: hidden; word-wrap: break-word; resize: none;"></textarea></div>
+</div>
+
+<div id="comment-form-identity" style="display: none;">
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#comment-form-guest" id="postas-guest" class="nascar-signin-link" title="Login via Guest">
+									</a>
+			</li>
+			<li>
+				<a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#comment-form-load-service:WordPress.com" id="postas-wordpress" class="nascar-signin-link" title="Login via WordPress.com">
+					<svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24"><rect x="0" fill="none" width="24" height="24"></rect><g><path fill="#FFF" d="M12.158 12.786l-2.698 7.84c.806.236 1.657.365 2.54.365 1.047 0 2.05-.18 2.986-.51-.024-.037-.046-.078-.065-.123l-2.762-7.57zM3.008 12c0 3.56 2.07 6.634 5.068 8.092L3.788 8.342c-.5 1.117-.78 2.354-.78 3.658zm15.06-.454c0-1.112-.398-1.88-.74-2.48-.456-.74-.883-1.368-.883-2.11 0-.825.627-1.595 1.51-1.595.04 0 .078.006.116.008-1.598-1.464-3.73-2.36-6.07-2.36-3.14 0-5.904 1.613-7.512 4.053.21.008.41.012.58.012.94 0 2.395-.114 2.395-.114.484-.028.54.684.057.74 0 0-.487.058-1.03.086l3.275 9.74 1.968-5.902-1.4-3.838c-.485-.028-.944-.085-.944-.085-.486-.03-.43-.77.056-.742 0 0 1.484.114 2.368.114.94 0 2.397-.114 2.397-.114.486-.028.543.684.058.74 0 0-.488.058-1.03.086l3.25 9.665.897-2.997c.456-1.17.684-2.137.684-2.907zm1.82-3.86c.04.286.06.593.06.924 0 .912-.17 1.938-.683 3.22l-2.746 7.94c2.672-1.558 4.47-4.454 4.47-7.77 0-1.564-.4-3.033-1.1-4.314zM12 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"></path></g></svg>				</a>
+			</li>
+			<li>
+			</li><li>
+				<a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#comment-form-load-service:Twitter" id="postas-twitter" class="nascar-signin-link" title="Login via Twitter">
+					<svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24"><rect x="0" fill="none" width="24" height="24"></rect><g><path fill="#FFF" d="M22.23 5.924c-.736.326-1.527.547-2.357.646.847-.508 1.498-1.312 1.804-2.27-.793.47-1.67.812-2.606.996C18.325 4.498 17.258 4 16.078 4c-2.266 0-4.103 1.837-4.103 4.103 0 .322.036.635.106.935-3.41-.17-6.433-1.804-8.457-4.287-.353.607-.556 1.312-.556 2.064 0 1.424.724 2.68 1.825 3.415-.673-.022-1.305-.207-1.86-.514v.052c0 1.988 1.415 3.647 3.293 4.023-.344.095-.707.145-1.08.145-.265 0-.522-.026-.773-.074.522 1.63 2.038 2.817 3.833 2.85-1.404 1.1-3.174 1.757-5.096 1.757-.332 0-.66-.02-.98-.057 1.816 1.164 3.973 1.843 6.29 1.843 7.547 0 11.675-6.252 11.675-11.675 0-.178-.004-.355-.012-.53.802-.578 1.497-1.3 2.047-2.124z"></path></g></svg>				</a>
+			</li>
+			<li>
+				<a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#comment-form-load-service:Facebook" id="postas-facebook" class="nascar-signin-link" title="Login via Facebook">
+					<svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24"><rect x="0" fill="none" width="24" height="24"></rect><g><path fill="#FFF" d="M20.007 3H3.993C3.445 3 3 3.445 3 3.993v16.013c0 .55.445.994.993.994h8.62v-6.97H10.27V11.31h2.346V9.31c0-2.325 1.42-3.59 3.494-3.59.993 0 1.847.073 2.096.106v2.43h-1.438c-1.128 0-1.346.537-1.346 1.324v1.734h2.69l-.35 2.717h-2.34V21h4.587c.548 0 .993-.445.993-.993V3.993c0-.548-.445-.993-.993-.993z"></path></g></svg>				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="./values_files/ad516503a11cd5ca435acc9bb6523536" alt="Gravatar" width="25" class="no-grav">
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value=""></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value=""></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="url" value=""></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./values_files/ad516503a11cd5ca435acc9bb6523536" alt="WordPress.com Logo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="">
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="">
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="">
+						<p class="comment-form-posting-as pa-wordpress">
+			<strong></strong>
+			You are commenting using your WordPress.com account.			<span class="comment-form-log-out">
+				(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;wordpress&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;
+				<a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)
+			</span>
+			<span class="pa-icon"><svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24"><rect x="0" fill="none" width="24" height="24"></rect><g><path fill="#FFF" d="M12.158 12.786l-2.698 7.84c.806.236 1.657.365 2.54.365 1.047 0 2.05-.18 2.986-.51-.024-.037-.046-.078-.065-.123l-2.762-7.57zM3.008 12c0 3.56 2.07 6.634 5.068 8.092L3.788 8.342c-.5 1.117-.78 2.354-.78 3.658zm15.06-.454c0-1.112-.398-1.88-.74-2.48-.456-.74-.883-1.368-.883-2.11 0-.825.627-1.595 1.51-1.595.04 0 .078.006.116.008-1.598-1.464-3.73-2.36-6.07-2.36-3.14 0-5.904 1.613-7.512 4.053.21.008.41.012.58.012.94 0 2.395-.114 2.395-.114.484-.028.54.684.057.74 0 0-.487.058-1.03.086l3.275 9.74 1.968-5.902-1.4-3.838c-.485-.028-.944-.085-.944-.085-.486-.03-.43-.77.056-.742 0 0 1.484.114 2.368.114.94 0 2.397-.114 2.397-.114.486-.028.543.684.058.74 0 0-.488.058-1.03.086l3.25 9.665.897-2.997c.456-1.17.684-2.137.684-2.907zm1.82-3.86c.04.286.06.593.06.924 0 .912-.17 1.938-.683 3.22l-2.746 7.94c2.672-1.558 4.47-4.454 4.47-7.77 0-1.564-.4-3.033-1.1-4.314zM12 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"></path></g></svg></span>
+		</p>
+					</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./values_files/ad516503a11cd5ca435acc9bb6523536" alt="Google+ photo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="">
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="">
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="">
+						<p class="comment-form-posting-as pa-googleplus">
+			<strong></strong>
+			You are commenting using your Google+ account.			<span class="comment-form-log-out">
+				(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;googleplus&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;
+				<a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)
+			</span>
+			<span class="pa-icon"><svg xmlns="http://www.w3.org/2000/svg" role="presentation" x="0px" y="0px" viewBox="0 0 60 60"><path fill="#FFF" d="M56.3,30c0,-1.6 -0.2,-3.4 -0.6,-5h-3.1H42.2H30v10.6h14.8C44,39.3 42,42 39.1,43.9l8.8,6.8C53,46 56.3,39 56.3,30z"></path><path fill="#FFF" d="M30,57.5c6.7,0 13.1,-2.4 17.9,-6.8l-8.8,-6.8c-2.5,1.6 -5.6,2.4 -9.1,2.4c-7.2,0 -13.3,-4.7 -15.4,-11.2l-9.3,7.1C9.8,51.3 19.1,57.5 30,57.5z"></path><path fill="#FFF" d="M5.3,42.2l9.3,-7.1c-0.5,-1.6 -0.8,-3.3 -0.8,-5.1s0.3,-3.5 0.8,-5.1l-9.3,-7.1C3.5,21.5 2.5,25.6 2.5,30S3.5,38.5 5.3,42.2z"></path><path fill="#FFF" d="M40.1,17.4l8,-8C43.3,5.1 37,2.5 30,2.5C19.1,2.5 9.8,8.7 5.3,17.8l9.3,7.1c2.1,-6.5 8.2,-11.1 15.4,-11.1C33.9,13.7 37.4,15.1 40.1,17.4z"></path></svg></span>
+		</p>
+					</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./values_files/ad516503a11cd5ca435acc9bb6523536" alt="Twitter picture" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="">
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="">
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="">
+						<p class="comment-form-posting-as pa-twitter">
+			<strong></strong>
+			You are commenting using your Twitter account.			<span class="comment-form-log-out">
+				(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;twitter&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;
+				<a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)
+			</span>
+			<span class="pa-icon"><svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24"><rect x="0" fill="none" width="24" height="24"></rect><g><path fill="#FFF" d="M22.23 5.924c-.736.326-1.527.547-2.357.646.847-.508 1.498-1.312 1.804-2.27-.793.47-1.67.812-2.606.996C18.325 4.498 17.258 4 16.078 4c-2.266 0-4.103 1.837-4.103 4.103 0 .322.036.635.106.935-3.41-.17-6.433-1.804-8.457-4.287-.353.607-.556 1.312-.556 2.064 0 1.424.724 2.68 1.825 3.415-.673-.022-1.305-.207-1.86-.514v.052c0 1.988 1.415 3.647 3.293 4.023-.344.095-.707.145-1.08.145-.265 0-.522-.026-.773-.074.522 1.63 2.038 2.817 3.833 2.85-1.404 1.1-3.174 1.757-5.096 1.757-.332 0-.66-.02-.98-.057 1.816 1.164 3.973 1.843 6.29 1.843 7.547 0 11.675-6.252 11.675-11.675 0-.178-.004-.355-.012-.53.802-.578 1.497-1.3 2.047-2.124z"></path></g></svg></span>
+		</p>
+					</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./values_files/ad516503a11cd5ca435acc9bb6523536" alt="Facebook photo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="">
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="">
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="">
+						<p class="comment-form-posting-as pa-facebook">
+			<strong></strong>
+			You are commenting using your Facebook account.			<span class="comment-form-log-out">
+				(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;facebook&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;
+				<a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)
+			</span>
+			<span class="pa-icon"><svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24"><rect x="0" fill="none" width="24" height="24"></rect><g><path fill="#FFF" d="M20.007 3H3.993C3.445 3 3 3.445 3 3.993v16.013c0 .55.445.994.993.994h8.62v-6.97H10.27V11.31h2.346V9.31c0-2.325 1.42-3.59 3.494-3.59.993 0 1.847.073 2.096.106v2.43h-1.438c-1.128 0-1.346.537-1.346 1.324v1.734h2.69l-.35 2.717h-2.34V21h4.587c.548 0 .993-.445.993-.993V3.993c0-.548-.445-.993-.993-.993z"></path></g></svg></span>
+		</p>
+		w
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe" style="display: none;">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;"> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of new comments via email.</label></p></div>
+
+
+
+
+<p class="form-submit" style="display: none;"><input name="submit" type="submit" id="comment-submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="5246" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="53538453d5"></p>
+<input type="hidden" name="genseq" value="1523251820">
+<p style="display: none;"></p>			<input type="hidden" id="ak_js" name="ak_js" value="1523251110153"></form>
+			</div><!-- #respond -->
+	<div style="clear: both"></div>
+</div><!-- #comments -->
+
+		
+		</div><!-- end #content -->
+	</div><!-- end #primary -->
+
+	
+	<div id="secondary" class="widget-area" role="complementary">
+		
+		<aside id="media_image-2" class="sidebar-widget widget_media_image"><style>.widget.widget_media_image { overflow: hidden; }.widget.widget_media_image img { height: auto; max-width: 100%; }</style><img width="111" height="386" src="./values_files/mrn-logo-2k172.png" class="image wp-image-7294 alignnone attachment-153x386 size-153x386" alt="" style="max-width: 100%; height: auto;" srcset="https://mrncciew.files.wordpress.com/2017/02/mrn-logo-2k172.png?w=111 111w, https://mrncciew.files.wordpress.com/2017/02/mrn-logo-2k172.png?w=43 43w, https://mrncciew.files.wordpress.com/2017/02/mrn-logo-2k172.png 155w" sizes="(max-width: 111px) 100vw, 111px" data-attachment-id="7294" data-permalink="https://mrncciew.com/mrn-logo-2k17-2/" data-orig-file="https://mrncciew.files.wordpress.com/2017/02/mrn-logo-2k172.png" data-orig-size="155,537" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="mrn-logo-2k17" data-image-description="" data-medium-file="https://mrncciew.files.wordpress.com/2017/02/mrn-logo-2k172.png?w=87" data-large-file="https://mrncciew.files.wordpress.com/2017/02/mrn-logo-2k172.png?w=155"></aside><aside id="pages-4" class="sidebar-widget widget_pages"><h1 class="widget-title">About Me</h1>		<ul>
+			<li class="page_item page-item-2"><a href="https://mrncciew.com/about/">CWNE#153, CCIE#22989 (RS &amp;&nbsp;Wireless)</a></li>
+		</ul>
+		</aside><aside id="media_image-3" class="sidebar-widget widget_media_image"><style>.widget.widget_media_image { overflow: hidden; }.widget.widget_media_image img { height: auto; max-width: 100%; }</style><img width="100" height="124" src="./values_files/mrn-1.png" class="image wp-image-5400 alignleft attachment-full size-full" alt="" style="max-width: 100%; height: auto;" data-attachment-id="5400" data-permalink="https://mrncciew.com/mrn-1/" data-orig-file="https://mrncciew.files.wordpress.com/2014/10/mrn-1.png" data-orig-size="100,124" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="MRN-1" data-image-description="" data-medium-file="https://mrncciew.files.wordpress.com/2014/10/mrn-1.png?w=100" data-large-file="https://mrncciew.files.wordpress.com/2014/10/mrn-1.png?w=100"></aside><aside id="text-2" class="sidebar-widget widget_text">			<div class="textwidget"><a href="http://au.linkedin.com/in/rasikanayanajith">
+      
+          <img src="./values_files/btn_viewmy_120x33.png" width="120" height="33" border="0" alt="View Rasika Nayanajith&#39;s profile on LinkedIn">
+        
+    </a></div>
+		</aside><aside id="blog_subscription-2" class="sidebar-widget widget_blog_subscription"><h1 class="widget-title"><label for="subscribe-field">Follow Blog via Email</label></h1>
+				<form action="https://subscribe.wordpress.com/" method="post" accept-charset="utf-8" id="subscribe-blog">
+											<p>Enter your email address to follow this blog and receive notifications of new posts by email.</p>
+<p>Join 1,270 other followers</p>
+						<p><input type="text" name="email" style="width: 95%; padding: 1px 2px" placeholder="Enter your email address" value="" id="subscribe-field"></p>
+					
+					<p>
+						<input type="hidden" name="action" value="subscribe">
+						<input type="hidden" name="blog_id" value="34785242">
+						<input type="hidden" name="source" value="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/">
+						<input type="hidden" name="sub-type" value="widget">
+						<input type="hidden" name="redirect_fragment" value="blog_subscription-2">
+						<input type="hidden" id="_wpnonce" name="_wpnonce" value="9ef3d83fdc">						<input type="submit" value="Follow">
+					</p>
+				</form>
+			
+</aside><aside id="blog-stats-2" class="sidebar-widget widget_blog-stats"><h1 class="widget-title">Blog Stats</h1>		<ul>
+			<li>3,452,624 hits</li>
+		</ul>
+		</aside>		<aside id="recent-posts-2" class="sidebar-widget widget_recent_entries">		<h1 class="widget-title">Recent Posts</h1>		<ul>
+											<li>
+					<a href="https://mrncciew.com/2018/04/07/wifi-captures-with-sniffer-mode-ap/">WiFi Captures with Sniffer mode&nbsp;AP</a>
+									</li>
+											<li>
+					<a href="https://mrncciew.com/2018/03/09/ciscolive-2018/">CiscoLive 2018</a>
+									</li>
+											<li>
+					<a href="https://mrncciew.com/2018/02/20/wlc-netflow-with-extrahop/">WLC Netflow with&nbsp;ExtraHop</a>
+									</li>
+											<li>
+					<a href="https://mrncciew.com/2018/01/09/giving-without-expectations/">Giving without Expectations</a>
+									</li>
+											<li>
+					<a href="https://mrncciew.com/2017/10/24/network-monitoring-with-extrahop/">Network Monitoring with&nbsp;ExtraHop</a>
+									</li>
+											<li>
+					<a href="https://mrncciew.com/2017/10/20/ccna-cybersecurity-scholarship/">CCNA – Cybersecurity&nbsp;Scholarship</a>
+									</li>
+											<li>
+					<a href="https://mrncciew.com/2017/08/17/configuring-erspan/">Configuring ERSPAN</a>
+									</li>
+											<li>
+					<a href="https://mrncciew.com/2017/05/11/rwn-free-wireless-training/">RWN – Free Wireless&nbsp;Training</a>
+									</li>
+					</ul>
+		</aside><aside id="top-posts-2" class="sidebar-widget widget_top-posts"><h1 class="widget-title">Popular Now !</h1><ul>				<li>
+										<a href="https://mrncciew.com/2018/04/07/wifi-captures-with-sniffer-mode-ap/" class="bump-view" data-bump-view="tp">
+						WiFi Captures with Sniffer mode AP					</a>
+									</li>
+							<li>
+										<a href="https://mrncciew.com/2012/10/20/lightweight-to-autonomous-conversion/" class="bump-view" data-bump-view="tp">
+						Lightweight to Autonomous (vice versa) Conversion...					</a>
+									</li>
+							<li>
+										<a href="https://mrncciew.com/2014/08/16/decrypt-wpa2-psk-using-wireshark/" class="bump-view" data-bump-view="tp">
+						Decrypt WPA2-PSK using Wireshark					</a>
+									</li>
+							<li>
+										<a href="https://mrncciew.com/2014/10/08/802-11-mgmt-beacon-frame/" class="bump-view" data-bump-view="tp">
+						802.11 Mgmt : Beacon Frame					</a>
+									</li>
+							<li>
+										<a href="https://mrncciew.com/2013/12/13/ap-conversion-using-mode-button/" class="bump-view" data-bump-view="tp">
+						AP Conversion using MODE Button					</a>
+									</li>
+							<li>
+										<a href="https://mrncciew.com/2014/08/19/cwsp-4-way-handshake/" class="bump-view" data-bump-view="tp">
+						CWSP - 4 Way Handshake					</a>
+									</li>
+							<li>
+										<a href="https://mrncciew.com/2014/10/27/cwap-802-11-probe-requestresponse/" class="bump-view" data-bump-view="tp">
+						CWAP 802.11- Probe Request/Response					</a>
+									</li>
+							<li>
+										<a href="https://mrncciew.com/2014/10/14/cwap-802-11-power-management/" class="bump-view" data-bump-view="tp">
+						CWAP - 802.11 Power Management					</a>
+									</li>
+			</ul></aside><aside id="twitter_timeline-2" class="sidebar-widget widget_twitter_timeline"><h1 class="widget-title">Follow me on Twitter</h1><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 225px; height: 1685.25px; padding: 0px; border: none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px;" data-widget-id="459525665927094272" title="Twitter Timeline" src="./values_files/saved_resource.html"></iframe></aside><aside id="categories-2" class="sidebar-widget widget_categories"><h1 class="widget-title">Categories</h1>		<ul>
+	<li class="cat-item cat-item-2902965"><a href="https://mrncciew.com/category/3850/">3850</a>
+</li>
+	<li class="cat-item cat-item-1835529"><a href="https://mrncciew.com/category/5760/">5760</a>
+</li>
+	<li class="cat-item cat-item-166673053"><a href="https://mrncciew.com/category/7925g-deployment-guide/">7925G Deployment Guide</a>
+</li>
+	<li class="cat-item cat-item-26767519"><a href="https://mrncciew.com/category/802-11ac/">802.11ac</a>
+</li>
+	<li class="cat-item cat-item-161352066"><a href="https://mrncciew.com/category/802-11n-parameters/">802.11n Parameters</a>
+</li>
+	<li class="cat-item cat-item-36687750"><a href="https://mrncciew.com/category/802-11r/">802.11r</a>
+</li>
+	<li class="cat-item cat-item-12572"><a href="https://mrncciew.com/category/aaa/">AAA</a>
+</li>
+	<li class="cat-item cat-item-153059"><a href="https://mrncciew.com/category/acs/">ACS</a>
+</li>
+	<li class="cat-item cat-item-155381396"><a href="https://mrncciew.com/category/ap-registration/">AP Registration</a>
+</li>
+	<li class="cat-item cat-item-120224629"><a href="https://mrncciew.com/category/autonomous-ap-config/">Autonomous AP Config</a>
+</li>
+	<li class="cat-item cat-item-253905"><a href="https://mrncciew.com/category/avc/">AVC</a>
+</li>
+	<li class="cat-item cat-item-2185"><a href="https://mrncciew.com/category/best-practices/">Best Practices</a>
+</li>
+	<li class="cat-item cat-item-124929648"><a href="https://mrncciew.com/category/capwap-analysis/">CAPWAP Analysis</a>
+</li>
+	<li class="cat-item cat-item-124208316"><a href="https://mrncciew.com/category/ccie-planning/">CCIE Planning</a>
+</li>
+	<li class="cat-item cat-item-78099727"><a href="https://mrncciew.com/category/ccie-wireless-2/">CCIE Wireless</a>
+</li>
+	<li class="cat-item cat-item-649756"><a href="https://mrncciew.com/category/ccie-written/">CCIE Written</a>
+</li>
+	<li class="cat-item cat-item-570860012"><a href="https://mrncciew.com/category/ccna-cyber/">CCNA Cyber</a>
+</li>
+	<li class="cat-item cat-item-15164629"><a href="https://mrncciew.com/category/ccna-wireless/">CCNA Wireless</a>
+</li>
+	<li class="cat-item cat-item-99185"><a href="https://mrncciew.com/category/wlc/cli/">CLI</a>
+</li>
+	<li class="cat-item cat-item-164248"><a href="https://mrncciew.com/category/cmx/">CMX</a>
+</li>
+	<li class="cat-item cat-item-76609233"><a href="https://mrncciew.com/category/converged-access/">Converged Access</a>
+</li>
+	<li class="cat-item cat-item-237952"><a href="https://mrncciew.com/category/csc/">CSC</a>
+</li>
+	<li class="cat-item cat-item-21313681"><a href="https://mrncciew.com/category/cwap/">CWAP</a>
+</li>
+	<li class="cat-item cat-item-912463"><a href="https://mrncciew.com/category/cwna/">CWNA</a>
+</li>
+	<li class="cat-item cat-item-10826744"><a href="https://mrncciew.com/category/cwne/">CWNE</a>
+</li>
+	<li class="cat-item cat-item-3196033"><a href="https://mrncciew.com/category/cwsp/">CWSP</a>
+</li>
+	<li class="cat-item cat-item-114291"><a href="https://mrncciew.com/category/dhcp/">DHCP</a>
+</li>
+	<li class="cat-item cat-item-188070709"><a href="https://mrncciew.com/category/eap-methods/">EAP Methods</a>
+</li>
+	<li class="cat-item cat-item-14327305"><a href="https://mrncciew.com/category/extrahop/">ExtraHop</a>
+</li>
+	<li class="cat-item cat-item-54"><a href="https://mrncciew.com/category/general/">General</a>
+</li>
+	<li class="cat-item cat-item-156209198"><a href="https://mrncciew.com/category/guest-wireless/">Guest Wireless</a>
+</li>
+	<li class="cat-item cat-item-939639"><a href="https://mrncciew.com/category/home-lab/">Home Lab</a>
+</li>
+	<li class="cat-item cat-item-3935297"><a href="https://mrncciew.com/category/hsrp/">HSRP</a>
+</li>
+	<li class="cat-item cat-item-152741389"><a href="https://mrncciew.com/category/ios-based-wlc/">IOS based WLC</a>
+</li>
+	<li class="cat-item cat-item-1218436"><a href="https://mrncciew.com/category/ip-services/">IP Services</a>
+</li>
+	<li class="cat-item cat-item-10414"><a href="https://mrncciew.com/category/ipv6/">IPv6</a>
+</li>
+	<li class="cat-item cat-item-936037"><a href="https://mrncciew.com/category/ise/">ISE</a>
+</li>
+	<li class="cat-item cat-item-116588"><a href="https://mrncciew.com/category/mindfulness/">Mindfulness</a>
+</li>
+	<li class="cat-item cat-item-414"><a href="https://mrncciew.com/category/mobility/">Mobility</a>
+</li>
+	<li class="cat-item cat-item-1514310"><a href="https://mrncciew.com/category/mse/">MSE</a>
+</li>
+	<li class="cat-item cat-item-237904"><a href="https://mrncciew.com/category/multicast/">Multicast</a>
+</li>
+	<li class="cat-item cat-item-349614"><a href="https://mrncciew.com/category/netflow/">Netflow</a>
+</li>
+	<li class="cat-item cat-item-136771872"><a href="https://mrncciew.com/category/office-extend/">Office Extend</a>
+</li>
+	<li class="cat-item cat-item-29320356"><a href="https://mrncciew.com/category/prime-infrastructure/">Prime Infrastructure</a>
+</li>
+	<li class="cat-item cat-item-41085"><a href="https://mrncciew.com/category/qos/">QoS</a>
+</li>
+	<li class="cat-item cat-item-107964407"><a href="https://mrncciew.com/category/rogue-management/">Rogue Management</a>
+</li>
+	<li class="cat-item cat-item-906517"><a href="https://mrncciew.com/category/rrm/">RRM</a>
+</li>
+	<li class="cat-item cat-item-45710"><a href="https://mrncciew.com/category/snmp/">SNMP</a>
+</li>
+	<li class="cat-item cat-item-2244197"><a href="https://mrncciew.com/category/spanning-tree-protocol/">Spanning Tree Protocol</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://mrncciew.com/category/uncategorized/">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-115682040"><a href="https://mrncciew.com/category/video-over-wireless/">Video over Wireless</a>
+</li>
+	<li class="cat-item cat-item-30325807"><a href="https://mrncciew.com/category/voice-over-wireless/">Voice over Wireless</a>
+</li>
+	<li class="cat-item cat-item-4580493"><a href="https://mrncciew.com/category/wgb/">WGB</a>
+</li>
+	<li class="cat-item cat-item-17069723"><a href="https://mrncciew.com/category/wireless-packet-capture/">Wireless Packet Capture</a>
+</li>
+	<li class="cat-item cat-item-40137428"><a href="https://mrncciew.com/category/wireless-qos/">Wireless QoS</a>
+</li>
+	<li class="cat-item cat-item-28101026"><a href="https://mrncciew.com/category/wireless-troubleshooting/">Wireless Troubleshooting</a>
+</li>
+	<li class="cat-item cat-item-151126151"><a href="https://mrncciew.com/category/wlan-secuirty/">WLAN Secuirty</a>
+</li>
+	<li class="cat-item cat-item-1835040"><a href="https://mrncciew.com/category/wlc/">WLC</a>
+</li>
+	<li class="cat-item cat-item-140105370"><a href="https://mrncciew.com/category/wlc-features/">WLC Features</a>
+</li>
+	<li class="cat-item cat-item-142388023"><a href="https://mrncciew.com/category/wlc-management/">WLC Management</a>
+</li>
+		</ul>
+</aside><aside id="jp_blogs_i_follow-2" class="sidebar-widget widget_jp_blogs_i_follow"><h1 class="widget-title">Blogs I Follow</h1><ul><li><a href="http://thewlan.com.au/" class="bump-view" data-bump-view="bif">THE WLAN</a></li><li><a href="http://ciscofullbars.com/" class="bump-view" data-bump-view="bif">Cisco Full Bars</a></li><li><a href="http://rscciew.wordpress.com/" class="bump-view" data-bump-view="bif">Another Wireless Blog</a></li><li><a href="http://wlanlessonslearned.wordpress.com/" class="bump-view" data-bump-view="bif">WLAN Lessons Learned</a></li><li><a href="http://www.ccierants.com/" class="bump-view" data-bump-view="bif">Peter Revill CCIE Blog</a></li><li><a href="http://www.my80211.com/home/" class="bump-view" data-bump-view="bif">My80211.com</a></li><li><a href="http://wirelessccie.blogspot.com/" class="bump-view" data-bump-view="bif">CCIE Wireless</a></li><li><a href="http://www.revolutionwifi.net/revolutionwifi/" class="bump-view" data-bump-view="bif">Blog - Revolution Wi-Fi</a></li><li><a href="http://simplywifi.co/" class="bump-view" data-bump-view="bif">Vender – Neutral Thoughts of Wireless Remotes</a></li><li><a href="https://www.wifigeeks.org/" class="bump-view" data-bump-view="bif">WiFi Geeks</a></li></ul></aside><aside id="archives-2" class="sidebar-widget widget_archive"><h1 class="widget-title">Archives</h1>		<ul>
+			<li><a href="https://mrncciew.com/2018/04/">April 2018</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2018/03/">March 2018</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2018/02/">February 2018</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2018/01/">January 2018</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2017/10/">October 2017</a>&nbsp;(2)</li>
+	<li><a href="https://mrncciew.com/2017/08/">August 2017</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2017/05/">May 2017</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2017/04/">April 2017</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2017/03/">March 2017</a>&nbsp;(2)</li>
+	<li><a href="https://mrncciew.com/2016/12/">December 2016</a>&nbsp;(3)</li>
+	<li><a href="https://mrncciew.com/2016/10/">October 2016</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2016/06/">June 2016</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2016/04/">April 2016</a>&nbsp;(2)</li>
+	<li><a href="https://mrncciew.com/2016/01/">January 2016</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2015/12/">December 2015</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2015/11/">November 2015</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2015/10/">October 2015</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2015/06/">June 2015</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2015/05/">May 2015</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2015/03/">March 2015</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2015/02/">February 2015</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2015/01/">January 2015</a>&nbsp;(2)</li>
+	<li><a href="https://mrncciew.com/2014/12/">December 2014</a>&nbsp;(2)</li>
+	<li><a href="https://mrncciew.com/2014/11/">November 2014</a>&nbsp;(12)</li>
+	<li><a href="https://mrncciew.com/2014/10/">October 2014</a>&nbsp;(26)</li>
+	<li><a href="https://mrncciew.com/2014/09/">September 2014</a>&nbsp;(20)</li>
+	<li><a href="https://mrncciew.com/2014/08/">August 2014</a>&nbsp;(14)</li>
+	<li><a href="https://mrncciew.com/2014/07/">July 2014</a>&nbsp;(2)</li>
+	<li><a href="https://mrncciew.com/2014/05/">May 2014</a>&nbsp;(5)</li>
+	<li><a href="https://mrncciew.com/2014/04/">April 2014</a>&nbsp;(3)</li>
+	<li><a href="https://mrncciew.com/2014/03/">March 2014</a>&nbsp;(3)</li>
+	<li><a href="https://mrncciew.com/2014/02/">February 2014</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2014/01/">January 2014</a>&nbsp;(10)</li>
+	<li><a href="https://mrncciew.com/2013/12/">December 2013</a>&nbsp;(12)</li>
+	<li><a href="https://mrncciew.com/2013/11/">November 2013</a>&nbsp;(4)</li>
+	<li><a href="https://mrncciew.com/2013/10/">October 2013</a>&nbsp;(3)</li>
+	<li><a href="https://mrncciew.com/2013/09/">September 2013</a>&nbsp;(6)</li>
+	<li><a href="https://mrncciew.com/2013/08/">August 2013</a>&nbsp;(6)</li>
+	<li><a href="https://mrncciew.com/2013/07/">July 2013</a>&nbsp;(10)</li>
+	<li><a href="https://mrncciew.com/2013/06/">June 2013</a>&nbsp;(10)</li>
+	<li><a href="https://mrncciew.com/2013/05/">May 2013</a>&nbsp;(23)</li>
+	<li><a href="https://mrncciew.com/2013/04/">April 2013</a>&nbsp;(26)</li>
+	<li><a href="https://mrncciew.com/2013/03/">March 2013</a>&nbsp;(50)</li>
+	<li><a href="https://mrncciew.com/2013/02/">February 2013</a>&nbsp;(17)</li>
+	<li><a href="https://mrncciew.com/2013/01/">January 2013</a>&nbsp;(14)</li>
+	<li><a href="https://mrncciew.com/2012/12/">December 2012</a>&nbsp;(14)</li>
+	<li><a href="https://mrncciew.com/2012/11/">November 2012</a>&nbsp;(9)</li>
+	<li><a href="https://mrncciew.com/2012/10/">October 2012</a>&nbsp;(5)</li>
+	<li><a href="https://mrncciew.com/2012/09/">September 2012</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2012/08/">August 2012</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2012/05/">May 2012</a>&nbsp;(1)</li>
+	<li><a href="https://mrncciew.com/2012/04/">April 2012</a>&nbsp;(1)</li>
+		</ul>
+		</aside><aside id="text-3" class="sidebar-widget widget_text"><h1 class="widget-title">G+</h1>			<div class="textwidget"><a style="cursor:pointer;display:inline-block;text-decoration:none;color:#333;font:13px/16px arial, sans-serif;" href="https://plus.google.com/116988280231729007493?prsrc=3" rel="publisher"><span style="display:inline-block;font-weight:bold;vertical-align:top;margin-right:5px;margin-top:8px;">mrncciew</span><span style="display:inline-block;vertical-align:top;margin-right:15px;margin-top:8px;">on</span><img style="border:0;width:32px;height:32px;" src="./values_files/gplus-32.png" alt=""></a></div>
+		</aside><aside id="rss_links-2" class="sidebar-widget widget_rss_links"><h1 class="widget-title">RSS</h1><ul><li><a href="https://mrncciew.com/feed/" title="Subscribe to Posts">RSS - Posts</a></li></ul>
+</aside>
+	</div><!-- #secondary .widget-area -->
+
+
+		</div><!-- end #main -->
+	</div><!-- end #page-inner -->
+
+	<footer id="colophon" role="contentinfo">
+		<div id="footer">
+			<div id="footer-inner">
+				<div id="footer-inner-inner">
+					
+
+				</div><!-- end #footer-inner-inner -->
+			</div><!-- end #footer-inner -->
+		</div>
+		<div id="copyright">
+			<div id="copyright-inner">
+					<div id="copyright-inner-inner">
+					<p>
+						<a href="https://wordpress.com/?ref=footer_blog">Blog at WordPress.com.</a>
+							</p>
+				</div><!-- end #copyright-inner-inner -->
+			</div><!-- end #copyright-inner -->
+		</div><!-- end #copyright -->
+	</footer><!-- end #footer -->
+
+	<!--  -->
+<div id="wpcom-follow-bubbles-jp_blogs_i_follow-2" class="wpcom-follow-bubbles"><div id="wpcom-bubble-jp_blogs_i_follow-2-1" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://thewlan.com.au/" class="bump-view" data-bump-view="bif">THE WLAN</a><p><small>Not Another Wireless Blog</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-2" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://ciscofullbars.com/" class="bump-view" data-bump-view="bif">Cisco Full Bars</a><p><small>WiFi, Mobility, &amp; Software Defined Access</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-3" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://rscciew.wordpress.com/" class="bump-view" data-bump-view="bif">Another Wireless Blog</a><p><small>Path to CCIE</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-4" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://wlanlessonslearned.wordpress.com/" class="bump-view" data-bump-view="bif">WLAN Lessons Learned</a><p></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-5" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://www.ccierants.com/" class="bump-view" data-bump-view="bif">Peter Revill CCIE Blog</a><p><small>My CCIE Wireless Journey &amp; More.....</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-6" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://www.my80211.com/home/" class="bump-view" data-bump-view="bif">My80211.com</a><p><small>My CCIE Wireless Journey &amp; More.....</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-7" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://wirelessccie.blogspot.com/" class="bump-view" data-bump-view="bif">CCIE Wireless</a><p><small>My CCIE Wireless Journey &amp; More.....</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-8" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://www.revolutionwifi.net/revolutionwifi/" class="bump-view" data-bump-view="bif">Blog - Revolution Wi-Fi</a><p><small>My CCIE Wireless Journey &amp; More.....</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-9" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="http://simplywifi.co/" class="bump-view" data-bump-view="bif">Vender – Neutral Thoughts of Wireless Remotes</a><p><small>My CCIE Wireless Journey &amp; More.....</small></p></div></div><div id="wpcom-bubble-jp_blogs_i_follow-2-10" class="wpcom-bubble wpcom-follow-bubble"><div class="bubble-txt"><a href="https://www.wifigeeks.org/" class="bump-view" data-bump-view="bif">WiFi Geeks</a><p><small>My CCIE Wireless Journey &amp; More.....</small></p></div></div></div><script type="text/javascript" src="./values_files/gprofiles.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./values_files/wpgroho.js.download"></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-13192b8c9af09f06b0f600219176d9e3">
+	</div>
+	<div class="grofile-hash-map-e6bfc472b18c36eb851ccc502bfb036d">
+	</div>
+	<div class="grofile-hash-map-5f21ac2f61313ab07f5c04b2cbefab0d">
+	</div>
+	<div class="grofile-hash-map-f6346ac53ea9e44bb0702598afb85635">
+	</div>
+	<div class="grofile-hash-map-40dcea0c2dac53258abe5c9ddae97705">
+	</div>
+	<div class="grofile-hash-map-e236292ee7c8c596f0d942db4364eadd">
+	</div>
+	</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/mrncciew.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/mrncciew.wordpress.com\/wp-login.php?action=logout&_wpnonce=5223600f7c","homeURL":"https:\/\/mrncciew.com\/","postID":"5246","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"0","userIsLoggedIn":"","isJetpack":"","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./values_files/saved_resource(3)"></script>
+
+	<div id="carousel-reblog-box">
+		<form action="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#" name="carousel-reblog">
+			<textarea id="carousel-reblog-content" name="carousel-reblog-content" placeholder="Add your thoughts here... (optional)"></textarea>
+			<label for="carousel-reblog-to-blog-id" id="carousel-reblog-lblogid">Post to</label>
+			<select name="carousel-reblog-to-blog-id" id="carousel-reblog-to-blog-id">
+						</select>
+
+			<div class="submit">
+				<span class="canceltext"><a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/#" class="cancel">Cancel</a></span>
+				<input type="submit" name="carousel-reblog-submit" class="button" id="carousel-reblog-submit" value="Reblog Post">
+				<input type="hidden" id="carousel-reblog-blog-id" value="34785242">
+				<input type="hidden" id="carousel-reblog-blog-url" value="https://mrncciew.com">
+				<input type="hidden" id="carousel-reblog-blog-title" value="mrn-cciew">
+				<input type="hidden" id="carousel-reblog-post-url" value="">
+				<input type="hidden" id="carousel-reblog-post-title" value="">
+			</div>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="05bda00187"><input type="hidden" name="_wp_http_referer" value="/2014/10/12/cwap-802-11-medium-contention/">		</form>
+
+		<div class="arrow"></div>
+	</div>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/mrncciew.com\/2014\/10\/12\/cwap-802-11-medium-contention\/":5246};
+	</script>
+		<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-linkedin' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+		<link rel="stylesheet" id="all-css-0-3" href="./values_files/jetpack-carousel.css" type="text/css" media="all">
+<!--[if lte IE 8]>
+<link rel='stylesheet' id='jetpack-carousel-ie8fix-css'  href='https://s1.wp.com/wp-content/mu-plugins/carousel/jetpack-carousel-ie8fix.css?m=1412618825h&#038;ver=20121024' type='text/css' media='all' />
+<![endif]-->
+<script type="text/javascript">
+/* <![CDATA[ */
+var actionbardata = {"siteID":"34785242","siteName":"mrn-cciew","siteURL":"https:\/\/mrncciew.com","icon":"<img alt='' src='https:\/\/secure.gravatar.com\/blavatar\/e6d51ea1ecc46222e010a7f69018e817?s=50&d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/chateau","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/mrncciew.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fmrncciew.com%2F2014%2F10%2F12%2Fcwap-802-11-medium-contention%2F","themeURL":"","xhrURL":"https:\/\/mrncciew.com\/wp-admin\/admin-ajax.php","nonce":"937d024752","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"9ef3d83fdc\" \/>","referer":"https:\/\/mrncciew.com\/2014\/10\/12\/cwap-802-11-medium-contention\/","canFollow":"1","feedID":"6837197","statusMessage":"","customizeLink":"https:\/\/mrncciew.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fmrncciew.wordpress.com%2F2014%2F10%2F12%2Fcwap-802-11-medium-contention%2F","postID":"5246","shortlink":"https:\/\/wp.me\/p2lXei-1mC","canEditPost":"","editLink":"https:\/\/wordpress.com\/post\/mrncciew.com\/5246","statsLink":"https:\/\/wordpress.com\/stats\/post\/5246\/mrncciew.com","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Chateau","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in Reader","viewReadPost":"View post in Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"Join 1,270 other followers","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/mrncciew.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fmrncciew.com%2F2014%2F10%2F12%2Fcwap-802-11-medium-contention%2F\">Log in now.<\/a>","stats":"Stats"}};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/mrncciew.com\/wp-admin\/admin-ajax.php","nonce":"62e0946ede","display_exif":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/mrncciew.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fmrncciew.com%2F2014%2F10%2F12%2Fcwap-802-11-medium-contention%2F","blog_id":"34785242","local_comments_commenting_as":"<fieldset><label for=\"email\">Email (Required)<\/label> <input type=\"text\" name=\"email\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-email-field\" \/><\/fieldset><fieldset><label for=\"author\">Name (Required)<\/label> <input type=\"text\" name=\"author\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-author-field\" \/><\/fieldset><fieldset><label for=\"url\">Website<\/label> <input type=\"text\" name=\"url\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-url-field\" \/><\/fieldset>","reblog":"Reblog","reblogged":"Reblogged","reblog_add_thoughts":"Add your thoughts here... (optional)","reblogging":"Reblogging...","post_reblog":"Post Reblog","stats_query_args":"blog=34785242&v=wpcom&tz=10&user_id=0&subd=mrncciew","is_public":"1","reblog_enabled":""};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./values_files/saved_resource(4)"></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>		<iframe src="./values_files/master.html" scrolling="no" id="likes-master" name="likes-master" style="display:none;"></iframe>
+		<div id="likes-other-gravatars"><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+<script src="./values_files/w.js.download" type="text/javascript" async="" defer=""></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'34785242','blog_tz':'10','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'34785242','v':'wpcom','tz':'10','user_id':'0','post':'5246','subd':'mrncciew'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1TaVhzUzFMbjdWNHpwZGhTayxPSUFCMGRVYVNrSFguN3FwSmQ5RGtNX3VQcj1yVzhiflM1THQtLGFdQ2toOXYlX3dSPVhaY2FaYTdzLzR5VTB3dWZLL1ZyJnEzNl0uW29GRW5EbV8udzVXOUpTaXgxL2dLUUFSUi5tX1NoLEtlMV9PSzJnUixqeDhqW2ZaYWNRSmVIaUc4dC5kSXM/JXVCL1hqM2lVbGhCdnxrSlV3Ny9haU5GYWUtZ0lwaS5NYysrVDJnXSstJjlvZlhoRXNfZSYmVkdbWFBJR3RUZng/aXMvSVduQzhrYiU5VU1UaGd+UXM2a19zfFtJOHJyJkNZVlA9clBGUEpzODc9SSVnfDd0RmJSOVlIbzhqL0Y2L2lHbTNnVV0xa0olMj9wUkIrejFBYlZ4S1VweSVGXVl+QzhELFVPU2oweVhueFJzdFpDJVhobz8='}]);
+_stq.push([ 'clickTrackerInit', '34785242', '5246' ]);
+	</script>
+<noscript>&lt;img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /&gt;</noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script></div><div id="actionbar" class="actnbr-pub-chateau actnbr-has-follow actnbr-hidden"><ul><li class="actnbr-btn actnbr-hidden"> 			    	<a class="actnbr-action actnbr-actn-follow" href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/"><svg class="gridicon gridicon__follow" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"></path></g></svg><span>Follow</span></a> 			    	<div class="actnbr-popover tip tip-top-left actnbr-notice"> 			    		<div class="tip-arrow"></div> 			    		<div class="tip-inner actnbr-follow-bubble"></div> 			    	</div> 			    </li><li class="actnbr-ellipsis actnbr-hidden"> 			  <svg class="gridicon gridicon__ellipsis" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><circle cx="5" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle></g></svg> 			  <div class="actnbr-popover tip tip-top-left actnbr-more"> 			  	<div class="tip-arrow"></div> 			  	<div class="tip-inner"> 				  <ul> 				    <li class="actnbr-sitename actnbr-hidden"><a href="https://mrncciew.com/"><img alt="" src="./values_files/e6d51ea1ecc46222e010a7f69018e817" class="avatar avatar-50" height="50" width="50"> mrn-cciew</a></li> 				   	<li class="actnbr-folded-customize actnbr-hidden"><a href="https://mrncciew.wordpress.com/wp-admin/customize.php?url=https%3A%2F%2Fmrncciew.wordpress.com%2F2014%2F10%2F12%2Fcwap-802-11-medium-contention%2F"><svg class="gridicon gridicon__customize" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M2 6c0-1.505.78-3.08 2-4 0 .845.69 2 2 2 1.657 0 3 1.343 3 3 0 .386-.08.752-.212 1.09.74.594 1.476 1.19 2.19 1.81L8.9 11.98c-.62-.716-1.214-1.454-1.807-2.192C6.753 9.92 6.387 10 6 10c-2.21 0-4-1.79-4-4zm12.152 6.848l1.34-1.34c.607.304 1.283.492 2.008.492 2.485 0 4.5-2.015 4.5-4.5 0-.725-.188-1.4-.493-2.007L18 9l-2-2 3.507-3.507C18.9 3.188 18.225 3 17.5 3 15.015 3 13 5.015 13 7.5c0 .725.188 1.4.493 2.007L3 20l2 2 6.848-6.848c1.885 1.928 3.874 3.753 5.977 5.45l1.425 1.148 1.5-1.5-1.15-1.425c-1.695-2.103-3.52-4.092-5.448-5.977z" data-reactid=".2.1.1:0.1b.0"></path></g></svg><span>Customize<span></span></span></a></li> 				    <li class="actnbr-folded-follow actnbr-hidden"><a class="actnbr-action actnbr-actn-follow" href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/"><svg class="gridicon gridicon__follow" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"></path></g></svg><span>Follow</span></a></li> 					<li class="actnbr-signup actnbr-hidden"><a href="https://wordpress.com/start/">Sign up</a></li> 				    <li class="actnbr-login actnbr-hidden"><a href="https://mrncciew.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fmrncciew.com%2F2014%2F10%2F12%2Fcwap-802-11-medium-contention%2F">Log in</a></li> 				     				    <li class="actnbr-shortlink actnbr-hidden"><a href="https://wp.me/p2lXei-1mC">Copy shortlink</a></li> 				    <li class="flb-report actnbr-hidden"><a href="http://en.wordpress.com/abuse/">Report this content</a></li> 				     				     				    <li class="actnbr-subs actnbr-hidden"><a href="https://subscribe.wordpress.com/">Manage subscriptions</a></li> 				    <li class="actnbr-fold actnbr-hidden"><a href="https://mrncciew.com/2014/10/12/cwap-802-11-medium-contention/">Collapse this bar</a></li> 			      </ul> 			    </div> 		      </div> 		    </li> 	      </ul></div><!-- end #page -->
+
+
+<!--
+	generated in 0.255 seconds
+	117483 bytes batcached for 300 seconds
+-->
+<img src="./values_files/g.gif" alt=":)" id="wpstats"><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./values_files/widget_iframe.334cd80b7ad09367efd2aa4bc8c5acf3.html" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./values_files/saved_resource(7).html"></iframe></body></html>
